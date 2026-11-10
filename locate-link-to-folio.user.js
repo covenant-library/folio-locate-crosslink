@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         Locate: Link record to FOLIO instance
 // @namespace    http://folio.org/
-// @version      2026-11-09
+// @version      2026-11-10
 // @description  Adds a link to the corresponding FOLIO instance record on the record detail page of the EBSCO Locate catalog. The link is added as a FOLIO icon to the record's tools (next to Save and the Tools menu). The instance UUID is taken from the page URL.
 // @author       Based on a script by Martin Scholz, Universitätsbibliothek Erlangen-Nürnberg
 // @icon         data:image/png;base64,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
 // @grant        none
 // @run-at       idle
 // @match        https://covenant.searchmobius.org/*
+// @downloadURL  https://github.com/covenant-library/folio-locate-crosslink/raw/refs/heads/main/locate-link-to-folio.user.js
+// @updateURL    https://github.com/covenant-library/folio-locate-crosslink/raw/refs/heads/main/locate-link-to-folio.user.js
 // ==/UserScript==
 
 (function() {

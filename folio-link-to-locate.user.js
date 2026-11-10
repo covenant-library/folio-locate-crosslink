@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         FOLIO: Link instance to EBSCO Locate catalog
 // @namespace    http://folio.org/
-// @version      2026-11-09
+// @version      2026-11-10
 // @description  Adds a link to the corresponding EBSCO Locate catalog record to the instance view in FOLIO. The link is placed as an icon in the record's title bar, directly next to the X. The instance UUID is taken from the page URL.
 // @author       Based on a script by Martin Scholz, Universitätsbibliothek Erlangen-Nürnberg
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=folio.org
 // @grant        none
 // @run-at       idle
 // @match        https://mobius.folio.ebsco.com/*
+// @downloadURL  https://github.com/covenant-library/folio-locate-crosslink/raw/refs/heads/main/folio-link-to-locate.user.js
+// @updateURL    https://github.com/covenant-library/folio-locate-crosslink/raw/refs/heads/main/folio-link-to-locate.user.js
 // ==/UserScript==
 
 (function() {
